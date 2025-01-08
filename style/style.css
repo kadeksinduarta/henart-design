@@ -1,0 +1,455 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid black; */
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", serif;
+}
+
+section.hero {
+  background-image: url(../images/background.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.hero h1 {
+  font-size: 50px;
+}
+
+section.hero p {
+  font-size: 20px;
+}
+
+/* halaman About */
+section.Company-profile {
+  padding: 40px 5%;
+  background-color: #110600;
+  color: #fff;
+}
+
+section.Company-profile .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section.Company-profile h1 {
+  text-align: center;
+  font-size: 30px;
+  padding: 0 0 20px 0;
+}
+
+section.Company-profile .paragraf p {
+  text-align: justify;
+}
+
+section.Company-profile .image {
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+section.Company-profile .image img {
+  width: 90%;
+  margin: auto;
+}
+
+/*  */
+section.about {
+  padding: 40px 5%;
+  background-color: #bba083;
+}
+
+section.about .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section.about h1 {
+  text-align: center;
+  font-size: 30px;
+  padding: 0 0 10px 0;
+}
+
+section.about .paragraf h1 {
+  text-align: center;
+  font-size: 22px;
+  padding: 20px 0 10px 0;
+}
+
+section.about .paragraf p {
+  text-align: justify;
+}
+
+section.about .image-3d {
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/bg-image-about.jpg);
+  transform-style: preserve-3d;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.about .image-3d img {
+  width: 60%;
+  margin: auto;
+  transform: translateZ(50px);
+}
+
+section.about-compeny-profile {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #bba083;
+}
+
+section.about-compeny-profile .paragraf p {
+  text-align: justify;
+  padding-bottom: 20px;
+}
+
+section.about-compeny-profile .image-center img {
+  width: 95%;
+  display: flex;
+  margin: auto;
+  padding: 0 2px;
+}
+
+section.about-compeny-profile .image {
+  width: 95%;
+  display: flex;
+  margin: auto;
+  margin-top: 5px;
+}
+
+section.about-compeny-profile .image img {
+  padding: 0 2px;
+  width: 50%;
+}
+
+section.about-compeny-profile .grid-profile p {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/*  */
+section.Furneture-Design {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  background-color: #675c3c;
+  color: #fff;
+}
+
+section.Furneture-Design h1 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+section.Furneture-Design .paragraf p {
+  text-align: justify;
+  padding-bottom: 20px;
+}
+
+section.Furneture-Design .grid-profile {
+  display: flex;
+  margin-top: 20px;
+  padding: 5px;
+  /* background-color: aqua; */
+}
+section.Furneture-Design .image-center {
+  flex: 2;
+}
+
+section.Furneture-Design .image-center img {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  margin: auto;
+  padding: 5px;
+  /* padding: 0 2px; */
+}
+
+section.Furneture-Design .grid-profile .image {
+  /* width: 100%; */
+  display: flex;
+  height: 100%;
+  /* background-color: blue; */
+  flex-direction: column;
+  margin: auto;
+  margin-top: 5px;
+  flex: 1;
+}
+
+section.Furneture-Design .image img {
+  padding: 3px;
+  width: 100%;
+}
+
+/*  */
+section.room-decoration {
+  padding: 20px 5%;
+  background-color: #675c3c;
+  color: #fff;
+}
+
+section.room-decoration h1 {
+  text-align: center;
+}
+
+section.room-decoration p {
+  text-align: justify;
+  margin-top: 30px;
+}
+
+section.room-decoration .images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.room-decoration .images img {
+  width: 50%;
+  padding: 3px;
+  transition: all 0.3s;
+  filter: grayscale(50%);
+}
+
+section.room-decoration .images img:hover {
+  transform: scale(1.05);
+  border-radius: 10px;
+  filter: grayscale(0%);
+}
+
+section.souvenirs {
+  padding: 30px 5%;
+  background-color: #bba083;
+}
+
+section.souvenirs .images {
+  display: flex;
+}
+
+section.souvenirs .images img {
+  width: 50%;
+  padding: 3px;
+}
+
+section.souvenirs h1 {
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+section.souvenirs .paragraf-and-gambar {
+  display: flex;
+  flex-direction: column;
+}
+
+section.souvenirs .paragraf-and-gambar p {
+  text-align: justify;
+  padding: 10px 0;
+}
+
+section.Testimonial {
+  padding: 30px 5%;
+  background-color: #bba083;
+}
+
+section.Testimonial h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+section.Testimonial .paragraf p {
+  text-align: justify;
+}
+
+section.Testimonial .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section.Testimonial .images img {
+  width: 50%;
+  padding: 3px;
+}
+
+/* gallery */
+.gallery {
+  padding: 30px 5%;
+  background-color: #bba083;
+}
+
+.gallery h1 {
+  text-align: center;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  transform: scale(1.03);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
