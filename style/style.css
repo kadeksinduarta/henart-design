@@ -211,28 +211,33 @@ section.room-decoration {
   color: #fff;
 }
 
+section.room-decoration .content {
+  display: flex;
+  flex-direction: column;
+}
+
 section.room-decoration h1 {
   text-align: center;
 }
 
-section.room-decoration p {
+section.room-decoration .content .paragraf p {
   text-align: justify;
   margin-top: 30px;
 }
 
-section.room-decoration .images {
+section.room-decoration .content .images {
   display: flex;
   flex-wrap: wrap;
 }
 
-section.room-decoration .images img {
+section.room-decoration .content .images img {
   width: 50%;
   padding: 3px;
   transition: all 0.3s;
   filter: grayscale(50%);
 }
 
-section.room-decoration .images img:hover {
+section.room-decoration .content .images img:hover {
   transform: scale(1.05);
   border-radius: 10px;
   filter: grayscale(0%);
@@ -243,26 +248,26 @@ section.souvenirs {
   background-color: #bba083;
 }
 
-section.souvenirs .images {
+section.souvenirs .content .images {
   display: flex;
 }
 
-section.souvenirs .images img {
+section.souvenirs .content .images img {
   width: 50%;
   padding: 3px;
 }
 
-section.souvenirs h1 {
+section.souvenirs .content h1 {
   text-align: center;
   margin: 30px 0 20px 0;
 }
 
-section.souvenirs .paragraf-and-gambar {
+section.souvenirs .content .paragraf-and-gambar {
   display: flex;
   flex-direction: column;
 }
 
-section.souvenirs .paragraf-and-gambar p {
+section.souvenirs .content .paragraf-and-gambar p {
   text-align: justify;
   padding: 10px 0;
 }
@@ -451,5 +456,184 @@ img.hover-shadow {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
+  }
+}
+
+@media (min-width: 700px) {
+  section.Company-profile .content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.Company-profile .content .paragraf,
+  section.Company-profile .image,
+  section.about .content .paragraf,
+  section.about .content .image-3d,
+  section.about-compeny-profile .paragraf,
+  section.about-compeny-profile .image-center,
+  section.about-compeny-profile .grid-profile {
+    flex: 1;
+  }
+
+  section.Company-profile .content .paragraf p {
+    line-height: 28px;
+    font-size: 19px;
+  }
+
+  section.Company-profile .image img {
+    width: 100%;
+    margin: auto;
+  }
+
+  section.about h1:nth-child(1) {
+    margin: 30px 0;
+  }
+
+  section.about .content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  section.about .content .paragraf p {
+    margin-top: 20px;
+    line-height: 28px;
+    font-size: 19px;
+  }
+
+  section.about .content .paragraf h1 {
+    font-size: 30px;
+  }
+
+  section.about .content .paragraf h1:nth-child(3) {
+    margin-top: 40px;
+  }
+
+  section.about .content .image-3d img {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  section.about-compeny-profile {
+    flex-direction: row;
+    padding: 70px 5%;
+  }
+
+  section.about-compeny-profile p {
+    line-height: 28px;
+    font-size: 19px;
+  }
+
+  section.about-compeny-profile img,
+  section.Furneture-Design .content .grid-profile img {
+    border-radius: 10px;
+  }
+
+  section.Furneture-Design .content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  section.Furneture-Design .content .grid-profile {
+    flex: 1;
+  }
+
+  section.Furneture-Design .content .paragraf {
+    flex: 1;
+    line-height: 28px;
+    font-size: 19px;
+  }
+
+  section.room-decoration .content {
+    /* flex-direction: row; */
+    align-items: center;
+  }
+
+  section.room-decoration h1 {
+    margin-top: 30px;
+  }
+
+  section.room-decoration .content .paragraf {
+    /* flex: 1; */
+  }
+
+  section.room-decoration .content .paragraf p {
+    line-height: 28px;
+    font-size: 19px;
+  }
+
+  section.room-decoration .content .images {
+    /* flex: 1; */
+    /* padding: 50px; */
+    margin: 30px 0;
+  }
+
+  section.room-decoration .content .images img {
+    width: 25%;
+    padding: 15px;
+    transition: all 0.3s;
+  }
+
+  section.room-decoration .content .images img:hover {
+    transform: scale(1.05);
+    border-radius: 20px;
+    filter: grayscale(0%);
+  }
+
+  section.souvenirs .content {
+    display: flex;
+    align-items: center;
+  }
+
+  section.souvenirs h1 {
+    align-items: center;
+  }
+
+  section.souvenirs .content .images {
+    /* display: flex; */
+    flex: 1;
+  }
+  section.souvenirs .content .paragraf-and-gambar {
+    flex: 1;
+  }
+
+  section.souvenirs .content .paragraf-and-gambar p {
+    line-height: 28px;
+    font-size: 19px;
+  }
+
+  section.souvenirs .content .paragraf-and-gambar img {
+    width: 50%;
+    height: 50%;
+  }
+
+  section.Testimonial .content {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: row-reverse;
+  }
+
+  section.Testimonial .content .paragraf,
+  section.Testimonial .content .images {
+    flex: 1;
+  }
+
+  section.Testimonial .content .images {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  section.Testimonial .content .paragraf p {
+    line-height: 28px;
+    font-size: 19px;
+  }
+
+  section.Testimonial .content .images img {
+    /* height: 300px; */
+    width: 230px;
+    padding: 20px;
   }
 }
